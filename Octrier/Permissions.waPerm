@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
+<allow action="create" groupName="Adminitrator" groupID="5E2CFBB7B176D343A084A56B84FAE282" resource="Model.CodePostal" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="update" groupName="Adminitrator" groupID="5E2CFBB7B176D343A084A56B84FAE282" resource="Model.CodePostal" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Adminitrator" groupID="5E2CFBB7B176D343A084A56B84FAE282" resource="Model.CodePostal" temporaryForcePermissions="false" type="dataClass"/>
+</permissions>

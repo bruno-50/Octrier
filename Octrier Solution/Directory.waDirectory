@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
+
+<group ID="01000000000000000000000000000000" name="Admin"></group>
+
+<group ID="7B15A2D8A68D37499479F64E7CAA4EE9" name="Manager">
+
+	<include group="Admin" groupID="01000000000000000000000000000000"/>
+</group>
+
+<group ID="D59525EA6548564AB4D6DF88969D2F56" name="Employee">
+
+	<include group="Admin" groupID="01000000000000000000000000000000"/>
+
+	<include group="Manager" groupID="7B15A2D8A68D37499479F64E7CAA4EE9"/>
+</group>
+
+<group ID="5E2CFBB7B176D343A084A56B84FAE282" name="Adminitrator"/>
+</directory>

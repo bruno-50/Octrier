@@ -1,0 +1,8 @@
+Arbitre
+Capitaine
+Pivot
+Ailier
+Gardien de but
+Avant-centre
+Entraîneur
+Supporteur

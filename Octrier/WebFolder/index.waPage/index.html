@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+		<meta content="text/html; charset=windows-1252" http-equiv="content-type">
+        <meta charset="utf-8">
+        <title>Octrier</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="generator" content="Wakanda GUIDesigner"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    	<meta name="wakanda-version" content="4 build 4.131311"/>
+		<meta name="wakanda-build" content="4.131311"/>
+
+<!--		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Contact" data-lib="WAF" data-id="contact" data-dataType="string" data-autoLoad="true" content="contact"/>-->
+<!--		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Lead" data-lib="WAF" data-id="lead" data-dataType="string" data-autoLoad="true" content="lead"/>-->
+<!--		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Account" data-lib="WAF" data-id="account" data-dataType="string" data-autoLoad="true" content="account"/>-->
+<!--	<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="object" data-source="signUpObj" data-lib="WAF" data-id="signUpObj" data-dataType="string" data-autoLoad="true" data-attributes="nom:string,prenom:string,dnaiss:date,cpville:string,sect_activ:string,email:string,photo:object,descript:string,pseudo:string,password:string,verifyPassword:string" content="signUpObj"/><meta name="WAF.config.datasources" data-type="dataSource" data-source-type="scalar" data-source="wLeads" data-lib="WAF" data-id="wLeads" data-dataType="string" data-autoLoad="true" content="wLeads"/>-->
+<!--    	<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="object" data-source="{id}signUpobj" data-scope="local" data-lib="WAF" data-id="{id}signUpobj" data-dataType="string" data-autoLoad="true" data-attributes="nom:string,prenom:string,email:string,prof:string,cp:string,role:string,descript:string,pseudo:string,password:string,verifypassword:string,photo:object,ville:string" content="signUpobj"/>-->
+
+		
+		<meta name="WAF.config.loadJS" content="/scripts/bootstrap.js"/>
+		<meta name="WAF.config.loadJS" content="/scripts/responsiveslides.js"/>
+		<meta name="WAF.config.loadJS" content="/scripts/index.js"/>
+		<meta name="WAF.config.loadJS" id="waf-script" content="scripts/crmUtil.js"/>
+		<meta name="WAF.config.loadCSS" content="/styles/bootstrap.css"/>
+		<meta name="WAF.config.loadCSS" content="/styles/bootstrap-responsive.css"/>
+<!--		<meta name="WAF.config.loadCSS" content="/styles/bootstrap-combobox.css"/>-->
+		<meta name="WAF.config.loadCSS" content="/styles/responsiveslides.css"/>
+		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="/styles/index.css"/>
+<!--		<meta id="waf-palette" name="WAF.config.loadCSS" content="/walib/WAF/widget/palette/css/widget-palette-default.css"/>-->
+		<meta id="waf-project-css" name="WAF.config.loadCSS" content="/application.css"/>
+
+</head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="60px">
+
+         <div class="navbar navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Octrier</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li id="accueil" class="active"><a href="#">Accueil</a></li>
+							<li id="moncompte" style="display: none;"><a href="#compte">Mon compte</a></li>
+                            <li id="apropos"><a href="#about">A propos</a></li>
+                            <li id="contacts"><a href="#contact">Contact</a></li>
+                        </ul>
+                       <form  class="navbar-form pull-right" id="login">
+	                         <input id="loginNameTextField" class="span2" type="text" placeholder="Pseudo"></input>
+                            <input id="loginPasswordTextField" class="span2" type="password" placeholder="Mot de Passe"></input>
+							<a id="errorMsg" title="Erreur" data-content="" data-placement="bottom" data-toggle="popover" href="#" ></a>
+                            <button id="loginButton" type="submit" class="btn">Connexion</button>
+                    		<a id="loginMsg" class="status" href="#mdpforget" data-toggle="modal">Mot de passe oublié ?</a>
+                        </form>
+						<form class="navbar-form pull-right" id="logout" style="display: none;">
+							<a href="#" data-toggle="popover" data-placement="bottom" data-content="" title="Erreur" id="errorMsg"></a>
+                            <button id="logoutButton" type="submit" class="btn">Déconnexion</button>
+                    		<a id="logoutMsg"></a>
+                        </form>
+                    </div><!--nav-collapse -->
+                </div><!--container-->
+            </div><!--navbar-inner-->
+        </div><!--navbar-->
+
+	<div id="bodyComponent" data-type="component" data-start-load="true" data-path="/accueil.waComponent" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-component default inherited  waf-component-level-0 waf-level-0" style="margin-top: 50px;">
+</div>
+<!--bodyconponent-->
+<div tabindex="-1" role="dialog" id="mdpforget" class="modal hide fade" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" data-dismiss="modal" class="close" aria-hidden="true">×</button>
+<h3>Mot de passe oublié</h3>
+</div>
+<div class="modal-body">
+<p> Veuillez entrer l'adresse email que vous avez définie lors de la création de votre compte, un email vous sera envoyé à cette adresse
+avec votre identifiant et votre mot de passe</p>
+</div><!--modal-body-->
+<div class="modal-footer">
+		<div id="{id}errsignmsg" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="false" class="waf-widget waf-richText default inherited  "></div>
+<button data-dismiss="modal" class="btn" aria-hidden="true">Fermer</button>
+<!--<button class="btn btn-primary">Save changes</button>-->
+</div><!--modal-footer-->
+</div><!--tabindex-->
+
+       <div class="modal-footer">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+<!--        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+   	<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
+
+</body>
+</html>

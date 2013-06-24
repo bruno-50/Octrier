@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html><section data-group="[]" class="row default">
+    <meta name="generator" content="Wakanda GUIDesigner"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="CodePostal" data-scope="local" data-lib="WAF" data-id="{id}codePostal" data-dataType="string" data-autoLoad="true" content="codePostal"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Profession" data-scope="local" data-lib="WAF" data-id="{id}profession" data-dataType="string" data-autoLoad="true" content="profession"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="object" data-source="{id}recherchobj" data-scope="local" data-lib="WAF" data-id="{id}recherchobj" data-dataType="string" data-autoLoad="true" data-attributes="parequipe:boolean,parequipier:boolean,equipier:string,parville:boolean,parville:boolean,ville:string,pardept:boolean,dept:string,parsect:boolean,sectactiv:string" content="recherchobj"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="User" data-scope="local" data-lib="WAF" data-initialQueryString="queryStr" data-initialOrderBy="ville" data-id="{id}user" data-dataType="string" data-autoLoad="false" content="user"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="ListeEquipiers" data-scope="local" data-lib="WAF" data-id="{id}listeEquipiers" data-dataType="string" data-autoLoad="true" content="listeEquipiers"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--    <div class="container compte">-->
+        <!-- Example row of columns --><!--       <div style="padding-top: 60px;" class="row">
+            <div class="span8">
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#profile" data-toggle="tab">Password</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div id="home" class="tab-pane active in">
+                            <form id="tab">-->
+                                <div id="{id}container4" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container default inherited span9 ">
+                                    <div type="checkbox" id="{id}checkEquipe" data-type="checkbox" data-lib="WAF" data-label-position="right" data-label="Une équipe" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-checked="true" data-binding="{id}recherchobj.parequipe" class="waf-widget waf-checkbox default inherited  "></div>
+                                    <label id="{id}label4" for="{id}checkEquipe" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-checkbox ">Une équipe</label>
+                                    <div type="checkbox" id="{id}checkEquipier" data-type="checkbox" data-lib="WAF" data-label-position="right" data-label="Un équipier" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}recherchobj.parequipier" class="waf-widget waf-checkbox default inherited  "></div>
+                                    <label id="{id}label5" for="{id}checkEquipier" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-checkbox ">Un équipier</label>
+                                    <div type="checkbox" id="{id}checDept" data-type="checkbox" data-lib="WAF" data-label-position="right" data-label="Par département" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}recherchobj.pardept" class="waf-widget waf-checkbox default inherited  "></div>
+                                    <label id="{id}label2" for="{id}checDept" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-checkbox ">Par département</label>
+                                    <div type="checkbox" id="{id}checkVille" data-type="checkbox" data-lib="WAF" data-label-position="right" data-label="Par ville" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-checked="true" data-binding="{id}recherchobj.parville" class="waf-widget waf-checkbox default inherited  "></div>
+                                    <label id="{id}label3" for="{id}checkVille" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-checkbox ">Par ville</label>
+                                    <div id="{id}richText4" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="true" class="waf-widget waf-richText default inherited  ">Rechercher</div>
+                                    <input type="text" placeholder="Entrez le N° de Département" id="{id}textDept" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="true" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}recherchobj.dept" class="waf-widget waf-textField default inherited  "/>
+                                    <button id="{id}buttonRecherche" data-type="button" data-text="Rechercher" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-action="simple" class="waf-widget waf-button default inherited  "></button>
+                                    <div id="{id}comboequipier" data-type="combobox" data-limit="8" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="true" data-editable="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="recherchobj.equipier" data-binding-options="[equip] " data-binding-key="equip" data-binding="{id}listeEquipiers" data-autoDispatch="false" class="waf-widget waf-combobox default inherited  "><select><option value="">[equip] </option></select></div>
+                                    <div id="{id}comboparville" data-type="combobox" data-limit="20" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="false" data-editable="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="recherchobj.ville" data-binding-options="[Code] [ville] " data-binding-key="ville" data-binding="{id}codePostal" data-autoDispatch="false" class="waf-widget waf-combobox default inherited  "><select><option value="">[Code] [ville] </option></select></div>
+                                    <div type="checkbox" id="{id}checkSectActiv" data-type="checkbox" data-lib="WAF" data-label-position="right" data-label="Par secteur d'activité" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}recherchobj.parsect" class="waf-widget waf-checkbox default inherited  "></div>
+                                    <label id="{id}label8" for="{id}checkSectActiv" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-checkbox ">Par secteur d'activité</label>
+                                    <div id="{id}comboactiv" data-type="combobox" data-limit="23" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="true" data-editable="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding-out="recherchobj.sectactiv" data-binding-options="[prof] " data-binding-key="prof" data-binding="{id}profession" data-autoDispatch="false" class="waf-widget waf-combobox default inherited  ">
+                                        <select>
+                                            <option value="">[prof]</option>
+                                        </select>
+                                    </div>
+                                    <div id="{id}msgRecherche" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-hideonload="true" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText default inherited  "></div>
+                                </div>
+                                <div id="{id}listeEquipiers" data-type="dataGrid" data-selection-mode="single" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="" data-hideonload="true" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'photo','colID':'photo','width':'60','title':'Photo'},{'sourceAttID':'equipier','colID':'equipier','width':'80','title':'Equipier'},{'sourceAttID':'codePost','colID':'codePost','width':'100','title':'Code%20Postal'},{'sourceAttID':'ville','colID':'ville','width':'180','title':'Ville'},{'sourceAttID':'sect_activ','colID':'sect_activ','width':'220','title':'Secteur%20d%27activit%E9'}]" data-binding="{id}user" class="waf-widget waf-dataGrid default inherited  span8 "></div><!--</div>
+                        </form>
+                    </div>
+                    <div id="profile" class="tab-pane fade">
+                        <form id="tab2">
+                            <label>New Password</label>
+                            <input type="password" class="input-xlarge" />
+                            <div>
+                                <button class="btn btn-primary">Update</button>
+                            </div>
+                        </form>
+                    </div>-->
+                    <!--tab-pane fade-->
+<!--                </div>-->
+                <!--tab-content-->
+<!--            </div>-->
+            <!--well-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--row-->
+<!--    </div>-->
+    <!--container compte-->
+		<div id="{id}detailEquipier" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-hideonload="true" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container default inherited  span8 ">
+ 		<input type="text" id="{id}textField5" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Equipier" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}user.equipier" class="waf-widget waf-textField default inherited  "/>
+ 		<label id="{id}label11" for="{id}textField5" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField ">Equipier</label>
+ 		<input type="text" id="{id}textField6" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="pseudo" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}user.pseudo" class="waf-widget waf-textField default inherited  "/>
+ 		<label id="{id}label12" for="{id}textField6" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField ">pseudo</label>
+ 		<input type="text" id="{id}textField7" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="âge" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}user.age" class="waf-widget waf-textField default inherited  "/>
+ 		<label id="{id}label13" for="{id}textField7" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField ">âge</label>
+ 		<input type="text" id="{id}textField8" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Secteur d'activité" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}user.sect_activ" class="waf-widget waf-textField default inherited  "/>
+ 		<label id="{id}label14" for="{id}textField8" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField ">Secteur d'activité</label>
+ 		<div id="{id}image2" data-type="image" data-target="_blank" data-lib="WAF" data-label-position="left" data-label="" data-fit="4" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}user.photo" class="waf-widget waf-image default inherited  "></div>
+ 		<label id="{id}label16" for="{id}textField9" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField ">Description</label>
+ 		<textarea id="{id}textField9" data-type="textField" data-lib="WAF" data-binding="{id}user.descript" class="waf-widget waf-textField default inherited  " data-label="Description" data-label-position="left" data-multiline="true" data-readOnly="true" data-password="false" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false"></textarea>
+	</div>
+		</section>

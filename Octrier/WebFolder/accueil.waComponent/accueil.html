@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html><section data-group="[]" class="default">
+    <meta name="generator" content="Wakanda GUIDesigner"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array" data-source="{id}varsign" data-scope="local" data-lib="WAF" data-id="{id}varsign" data-dataType="string" data-autoLoad="true" data-attributes="pseudo:boolean,passwd:boolean,nom:boolean,prenom:boolean,email:boolean" content="varsign"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="object" data-source="{id}signUpobj" data-scope="local" data-lib="WAF" data-id="{id}signUpobj" data-dataType="string" data-autoLoad="true" data-attributes="nom:string,prenom:string,email:string,pseudo:string,password:string,verifypassword:string" content="signUpobj"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="User" data-scope="local" data-lib="WAF" data-id="{id}user" data-dataType="string" data-autoLoad="true" content="user"/>
+    
+    
+    
+    <div class="container accueil">
+
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit detail">
+                <h1>Pourquoi rester seul ?</h1>
+		<h2 style="padding-left: 15px;"> Rejoignez une équipe</h2>
+            </div>
+
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="span8">
+   <div id="{id}wrapper">
+    <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul id="{id}slider4" class="rslides">
+        <li>
+          <img src="../images/1.jpg" alt=""/>
+          <p class="caption">équipe féminine</p>
+        </li>
+        <li>
+          <img src="../images/2.jpg" alt=""/>
+          <p class="caption">équipe jeune</p>
+        </li>
+        <li>
+          <img src="../images/3.jpg" alt=""/>
+          <p class="caption">équipe masculine</p>
+        </li>
+        <li>
+          <img src="../images/4.jpg" alt=""/>
+          <p class="caption">équipe de football</p>
+        </li>
+        <li>
+          <img src="../images/5.jpg" alt=""/>
+          <p class="caption">équipe de hockey</p>
+        </li>
+        <li>
+          <img src="../images/6.jpg" alt=""/>
+          <p class="caption">équipe de couvreurs</p>
+        </li>
+        <li>
+          <img src="../images/7.jpg" alt=""/>
+          <p class="caption">équipe automobile</p>
+        </li>
+      </ul>
+    </div>
+<!--callbacks-->
+	</div>
+<!--wrapper-->
+                </div>
+<!--span8-->
+               <div class="span4">
+            <h3 style="margin-top: 0px;">Une équipe ?</h3>
+			<p style="margin:15px;">Dans le monde du travail, c'est comme pour le sport, on réussit mieux en équipe et encore mieux dans une bonne équipe.</p>
+			<h3>Que faut-il faire pour entrer dans une équipe ?</h3>
+			<p style="margin:15px;">Savoir ce que l'on peut apporter de mieux à l'équipe.</p>
+			<h3>Comment composer une bonne équipe ?</h3>
+			<p style="margin:15px;">Avec l'aide de ce site, vous pouvez prendre contact avec d'autres membres et créer ou faire partie d'une équipe.</p>
+            <p><a id="{id}details" href="#" class="btn">En savoir plus... </a></p>
+			<br/>
+			<p><a id="{id}inscription" href="#{id}myModal" data-toggle="modal" class="btn btn-success">Inscrivez-vous, c'est gratuit</a></p>
+            </div><!--span4-->
+</div><!--row-->
+            <hr/>
+
+
+<div tabindex="-1" role="dialog" id="{id}myModal" class="modal hide fade" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" data-dismiss="modal" class="close" aria-hidden="true">×</button>
+<h3>Inscription</h3>
+</div>
+<div class="modal-body">
+<!--      <form id="signup" class="form-horizontal" >-->
+      <form class="form-horizontal">
+		<div class="control-group">
+<!--	        <label class="control-label">Nom</label>-->
+<!--		<label id="label1" for="textNom" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label">Nom</label>-->
+		<label id="{id}label1" for="{id}textNom" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">Nom</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-user"></i></span>
+<!--    <input type="text" placeholder="Nom" id="textNom" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Nom" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="signUpobj.nom" class="waf-widget waf-textField default inherited  input-xlarge "/>-->
+    <input type="text" placeholder="Nom" id="{id}textNom" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Nom" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.nom" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>
+		</div>
+		<div class="control-group ">
+<!--	        <label class="control-label">Prénom</label>-->
+		<label id="{id}label2" for="{id}textPrenom" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">Prénom</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-user"></i></span>
+			<input type="text" placeholder="Prénom" id="{id}textPrenom" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Prénom" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.prenom" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>
+		</div>
+		<div class="control-group">
+<!--	        <label class="control-label">Email</label>-->
+		<label id="{id}label3" for="{id}textEmail" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">E-mail</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-envelope"></i></span>
+<div class="pdm">
+    <label>laissez ce champ vide</label>
+    <input type="text" name="e-mail"/>
+</div>
+			<input type="text" placeholder="adresse e-mail" id="{id}textEmail" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="E-mail" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.email" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>	
+		</div>
+		<div class="control-group">
+<!--	        <label class="control-label">Pseudo</label>-->
+		<label id="{id}label4" for="{id}textPseudo" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">Pseudo</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-user"></i></span>
+			<input type="text" placeholder="Pseudo" id="{id}textPseudo" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Pseudo" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.pseudo" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>	
+		</div>
+		<div class="control-group">
+<!--	        <label class="control-label">Mot de passe</label>-->
+		<label id="{id}label5" for="{id}textPasswd" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">Mot de passe</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-lock"></i></span>
+			<input type="text" placeholder="Mot de passe" id="{id}textPasswd" data-type="textField" data-readOnly="false" data-password="true" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Mot de passe" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.password" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>
+		</div>
+		<div class="control-group">
+<!--	        <label class="control-label">Confirmation Mot de passe</label>-->
+		<label id="{id}label6" for="{id}textVerify" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-label default inherited  waf-label-textField control-label ">Confirmation Mot de passe</label>
+			<div class="controls">
+			    <div class="input-prepend">
+				<span class="add-on"><i class="icon-lock"></i></span>
+			<input type="text" placeholder="confirmation Mot de passe" id="{id}textVerify" data-type="textField" data-readOnly="false" data-password="true" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Confirmation Mot de passe" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" data-binding="{id}signUpobj.verifypassword" class="waf-widget waf-textField default inherited  input-xlarge "/>
+				</div>
+			</div>
+		</div>
+		
+		<div class="control-group">
+<!--		<label class="control-label"></label>-->
+	      <div class="controls">
+			<button id="{id}signUpbutton" type="submit" data-type="button" data-text="Créer mon compte" data-target="_blank" data-lib="WAF" data-action="simple" class="waf-widget waf-button default inherited  btn btn-success "></button>
+	      </div>
+	
+	</div>
+	
+	  </form>
+</div><!--modal-body-->
+<div class="modal-footer">
+		<div id="{id}errsignmsg" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="false" class="waf-widget waf-richText default inherited  "></div>
+<button data-dismiss="modal" class="btn" aria-hidden="true">Fermer</button>
+<!--<button class="btn btn-primary">Save changes</button>-->
+</div><!--modal-footer-->
+</div><!--tabindex-->
+</div><!--container-->
+	</section>
